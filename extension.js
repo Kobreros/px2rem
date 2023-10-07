@@ -78,12 +78,12 @@ function replaceLine(newLine) {
 
 function activate(context) {
   // This line of code will only be executed once when your extension is activated
-  console.log('Congratulations, your extension "px2rem" is now active!');
+  // console.log('Congratulations, your extension "px2rem" is now active!');
 
   let px2rem = vscode.commands.registerCommand("px2rem.convert", function () {
     // The code you place here will be executed every time your command is executed
     // Display a message box to the user
-    vscode.window.showInformationMessage("Hello World from px2rem!");
+    // vscode.window.showInformationMessage("Hello World from px2rem!");
 
     replaceLine(calculatePxToRem().newLine);
   });
